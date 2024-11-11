@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container {
+    max-height: 600px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.image-container img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text-container {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    margin: 15px auto;
+    font-size: 2rem
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 12px auto;
+    color: rgb(107, 107, 107)
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    width: 90%;
+    padding: 2px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px
+
+}
+
+.left-side {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+.left-side img {
+    height: 50px;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+
+#annual {
+    color: black;
+    
+}
+
+.right-side p{
+    margin-top: 30px;
+    font-size: 1rem
+}
+
+.right-side p:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.button-section button {
+    border: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.proceed {
+   background-color: hsl(245, 75%, 52%);
+   color: #fff;
+   box-shadow: 1px 1px 4px hsl(245, 75%, 52%);;
+
+}
+
+.proceed:hover {
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: #fff;
+    color: rgb(145, 145, 145)
+}
+
+.cancel:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    .text-container {
+        padding: 5px 10px;
+    }
+    .right-side p, .left-side {
+        font-size: 0.8rem;
+    }
+    .plan {
+        padding: 20px;
+    }
+}
+
+@media (max-height: 650px) {
+    .container {
+        max-height: 500px;
+
+    }
+    
+}
